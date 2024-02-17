@@ -3,9 +3,10 @@ const sectionLivros = document.querySelector('#livros')
 function exibirLivros(listaDeLivros){
     sectionLivros.innerHTML = ''
     listaDeLivros.forEach((livro) => {
+        let disponibilidade = livro.quantidade > 0 ? 'livro__imagens' : 'livro__imagens indisponivel'
         sectionLivros.innerHTML += `
             <div class="livro">
-                <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
+                <img class="${disponibilidade}" src="${livro.imagem}" alt="${livro.alt}" />
                 <div class="tags">
                     <span class="tag">${livro.categoria}</span>
                 </div>
