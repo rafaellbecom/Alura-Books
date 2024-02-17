@@ -106,7 +106,7 @@ body {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
